@@ -1,0 +1,127 @@
+.section5 {
+  padding: 100px 160px 0;
+  &__container {
+    &-cards {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: -86px;
+    }
+    &-text{
+      width: 40%;
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    padding: 72px 30px 30px;
+    width: 314px;
+    height: 464px;
+    background-color: #FEFEFE;
+    box-shadow: 16px 16px 16px lightgray;
+    border: 0.5px solid lightgray;
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: transform 1.5s, background-color 0.5s;
+    position: relative;
+    z-index: 2;
+    &:hover {
+      transform: scale(1.2);
+      background-color: ghostwhite;
+    }
+
+    &-photo {
+      width: 64px;
+      height: 124px;
+      border-radius: 32px;
+      transform: rotate(-30deg);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    &-figures-box {
+      position: relative;
+    }
+
+    p {
+      margin: 0;
+      padding: 20px 0 64px;
+      position: relative;
+      line-height: 150%;
+      font-size: 14.4px;
+      &:after{
+        content: "";
+        display: block;
+        width: 64px;
+        height: 2px;
+        position: absolute;
+        bottom: 32px;
+        left: calc(50% - 32px);
+      }
+    }
+
+    h6 {
+      font-weight: 800;
+    }
+  }
+  &__photo {
+    width: 95px;
+    height: 124px;
+    object-fit: cover;
+    object-position: center;
+    transform: rotate(30deg);
+  }
+}
+
+.figure {
+  height: 162px;
+  width: 64px;
+  border-radius: 32px;
+  position: absolute;
+  bottom: 23px;
+  transform: rotate(30deg);
+}
+
+.card {
+  &-blue {
+    .figure {
+      background-color: #56CCF2;
+    }
+    p:after {
+      background-color: #56CCF2;
+    }
+    h6{
+      color: #56CCF2;
+    }
+  }
+  &-yellow {
+    .figure {
+      background-color: #FCC304;
+    }
+    p:after {
+      background-color: #FCC304;
+    }
+    h6{
+      color: #FCC304;
+    }
+  }
+  &-red {
+    .figure {
+      background-color: #F25656;
+    }
+    p:after {
+      background-color: #F25656;
+    }
+    h6{
+      color: #F25656;
+    }
+  }
+}

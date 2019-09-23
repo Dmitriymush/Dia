@@ -1,0 +1,30 @@
+.button {
+  letter-spacing: 1px;
+  width: 226px;
+  height: 56px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 64px;
+  font-size: 16px;
+  color: #253757;
+  cursor: pointer;
+  transition: background-color 1s, border-color 0.5s , color 0.5s;
+  &-section6 , &-footer {
+    background-color: #2F80ED;
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+
+  &-footer {
+    margin-top: 105px;
+  }
+  &:hover {
+    background-color: aliceblue;
+    border: 3px solid lightgray;
+  }
+  &:active {
+    color: #56CCF2;
+  }
+}

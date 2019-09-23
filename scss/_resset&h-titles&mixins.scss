@@ -1,0 +1,35 @@
+body {
+  margin:0;
+  font-family: Muli, sans-serif;
+}
+
+
+h3 {
+  font-weight: 800;
+  font-size: 16px;
+  color:#56CCF2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h5 , h6 {
+  margin: 0;
+  line-height: 150%;
+  font-size: 12.6px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  margin: 0;
+}
+
+@mixin oval {
+  border-radius: 50vw;
+  transform: rotate(30deg);
+  position: absolute;
+  opacity: 0.5;
+  box-sizing: border-box;
+  z-index: 0;
+}
