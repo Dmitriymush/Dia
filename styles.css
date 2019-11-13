@@ -391,7 +391,7 @@ h2 {
 }
 .section2 h2 {
   position: absolute;
-  top: 0;
+  top: 50px;
   line-height: 0;
   margin: 0 auto;
   text-align: center;
