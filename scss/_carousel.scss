@@ -1,0 +1,45 @@
+.carousel__btn {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: #FCC304;
+  transition: background-color 1s;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  &:hover {
+    background-color: gold;
+  }
+  &_next {
+    left: 200px;
+  }
+}
+
+.carousel {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__window {
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.twitter-card {
+  box-sizing: content-box;
+}
+
+.card-img {
+  height: 450px;
+  width: 800px;
+}
+
